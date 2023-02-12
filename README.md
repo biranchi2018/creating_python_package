@@ -1,5 +1,5 @@
 
-## Creating Python Packages:
+## Creating Python Package
 
 Following the below steps for creating python package
 
