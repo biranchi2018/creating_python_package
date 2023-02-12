@@ -77,9 +77,8 @@ Example :
 3. Open Terminal and python cli:
 
    ```python
-     
-      from biranchi.calculator import add, sub, mul, div
+   from biranchi.calculator import add, sub, mul, div
 	
-      print(add(2,3))
+   print(add(2,3))
    ```
 
