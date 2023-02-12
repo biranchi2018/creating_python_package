@@ -1,14 +1,12 @@
 
-Creating Python Packages:
-==========================
+## Creating Python Packages:
 
 Following the below steps for creating python package
 
 
-1. Folder structure:
-=====================
+### 1. Folder structure:
 
-Project-Folder
+    Project-Folder
 	- Package-Name
 		- __init__.py
 		- module.py
@@ -17,19 +15,17 @@ Project-Folder
 	- README.md
 	
 	
-2. Create Virtual Environment:
-===============================
+### 2. Create Virtual Environment:
 	python -m venv env
 	. env/bin/activate
 	
 	
-3. Install wheel package:
-==========================
+### 3. Install wheel package:
+
 	pip install wheel
 	
 	
-4. Create setup.py file:
-=========================
+### 4. Create setup.py file:
 
 ```python3
 from setuptools import setup, find_packages
@@ -52,31 +48,38 @@ setup(
 )
 ```
 
-5. Create Python Package:
-==========================
+### 5. Create Python Package:
 	python setup.py bdist_wheel
 
 
 
-========================================================================
 
 
 Example :
 ==========
+
 1. Create "biranchi" folder with the following:
-	__.init__.py
-	calculator.py
+
+   ```shell
+    __.init__.py
+    calculator.py
+   ```
 	
-2. pip install .
-	or 
+2. Install the package
+
+   ```shell
+   pip install .
+   or 
    python setup.py bdist_wheel
    pip install dist/biranchi-0.0.1-py3-none-any.whl
+   ```
    
 3. Open Terminal and python cli:
 
-	from biranchi.calculator import add, sub, mul, div
+   ```python
+     
+      from biranchi.calculator import add, sub, mul, div
 	
-	print(add(2,3))
-
-========================================================================
+      print(add(2,3))
+   ```
 
