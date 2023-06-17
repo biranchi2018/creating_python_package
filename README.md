@@ -23,7 +23,7 @@ Following the below steps for creating python package
 	
 ### 3. Install Dependent Pip packages:
 
-	pip install setuptools wheel
+	pip install setuptools wheel twine
 	
 
 ### 4. Add LICENSE.txt :
