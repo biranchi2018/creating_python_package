@@ -25,8 +25,12 @@ Following the below steps for creating python package
 
 	pip install setuptools wheel
 	
-	
-### 4. Create setup.py file:
+
+### 4. Add LICENSE.txt :
+Copy the License content from (https://opensource.org/license/mit/)[https://opensource.org/license/mit/]
+
+
+### 5. Create setup.py file:
 
 ```python3
 from setuptools import setup, find_packages
@@ -49,9 +53,8 @@ setup(
 )
 ```
 
-### 5. Create Python Package:
+### 6. Create Python Package:
 	python setup.py bdist_wheel
-
 
 
 
@@ -66,16 +69,21 @@ Example :
     calculator.py
    ```
 	
+2. Build the package
+
+   ```shell
+   python setup.py bdist_wheel
+   ```
+
 2. Install the package
 
    ```shell
    pip install .
    or 
-   python setup.py bdist_wheel
    pip install dist/biranchi-0.0.1-py3-none-any.whl
    ```
    
-3. Open Terminal and python cli:
+3. Using the Package :
 
    ```python
    from biranchi.calculator import add, sub, mul, div
@@ -84,7 +92,7 @@ Example :
    ```
 
 
-### 6. Uploading the package to Pypi:
+### 7. Uploading the package to Pypi:
 
 Create an account at Pypi (https://pypi.org/account/register/)
 
