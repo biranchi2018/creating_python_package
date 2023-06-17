@@ -12,6 +12,7 @@ Following the below steps for creating python package
 		- module.py
 	- __init__.py
 	- setup.py
+  	- LICENSE.txt
 	- README.md
 	
 	
@@ -20,9 +21,9 @@ Following the below steps for creating python package
 	. env/bin/activate
 	
 	
-### 3. Install wheel package:
+### 3. Install Dependent Pip packages:
 
-	pip install wheel
+	pip install setuptools wheel
 	
 	
 ### 4. Create setup.py file:
@@ -82,3 +83,13 @@ Example :
    print(add(2,3))
    ```
 
+
+### 6. Uploading the package to Pypi:
+
+Create an account at Pypi (https://pypi.org/account/register/)
+
+Run the below command to upload the package:
+
+  ```cmd
+   twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+  ```
